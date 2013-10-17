@@ -8,10 +8,6 @@ require_once("model/PersistantSticks.php");
 
 class LastStickGame {
 
-/**
- * Hela klassen kändes som en controller med tanke på all kommunikation till view
- * så gjorde den till en controller
- */
 	public function __construct() {
 		$this->ai = new \model\AIPlayer();
 		$this->sticks = new \model\PersistantSticks(\view\GameView::StartingNumberOfSticks); 
